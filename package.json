@@ -1,0 +1,27 @@
+{
+  "name": "mcphs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "deployment=true pm2 start server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@better-scroll/mouse-wheel": "^2.4.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "dotenv": "^14.3.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "greenlock-express": "^4.0.3",
+    "http": "^0.0.1-security",
+    "ipaddr.js": "^2.0.1",
+    "jquery": "^3.6.0",
+    "mongoose": "^6.1.8",
+    "pm2": "^5.2.0"
+  }
+}

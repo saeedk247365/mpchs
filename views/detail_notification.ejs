@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Detail Notification</title>
+</head>
+
+<body>
+  <h2>Detail Notification</h2>
+           
+    </h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Notification title</th>
+                <th>Body</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+              
+                <tr>
+                    <th scope="row"><%= notificationshow._id %></th>
+                   
+                    <th>
+                        <%= notificationshow.title %>
+                    </th>
+                    <th>
+                        <%= notificationshow.body %>
+                    </th>
+                    <th><a type="button" href="/notification/notification-show">Back</a></th>
+                </tr>
+            
+            
+
+        </tbody>
+
+    </table>
+</body>
+
+</html>

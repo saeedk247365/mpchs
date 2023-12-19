@@ -1,0 +1,13 @@
+.mapp{
+    width: 120%;
+    }
+  @media screen and (max-width: 800px) {
+    .mapp{
+      width: 100%;
+      }
+  }
+  @media screen and (max-width: 880px) {
+    .mapp{
+      width: 70%;
+      }
+  }

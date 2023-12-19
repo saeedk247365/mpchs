@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Page Title -->
+  <title>
+
+   MPCHS | Head-office
+  </title>
+  <link rel = "icon" type = "image/png" href = "../icon/multi logo.ico">
+  <!-- Meta Data -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" />
+
+  <!-- ======= Icons ======= -->
+  <link rel="stylesheet" href="../assets/dependencies/flaticon/flaticon.css" />
+  <link rel="stylesheet" href="../assets/css/all.min.css" />
+
+  <!-- ======= Carousel  ======= -->
+  <link rel="stylesheet" href="../assets/dependencies/slick/slick.min.css" />
+
+  <!-- ======= Animation  ======= -->
+  <link rel="stylesheet" href="../assets/dependencies/animation/animate.min.css" />
+  <link rel="stylesheet" href="../assets/dependencies/animation/custom-animation.css" />
+  <link rel="stylesheet" href="../assets/dependencies/fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- ======= Main Stylesheet ======= -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../css/mapp.css" />
+
+  <!-- ======= Custom Stylesheet ======= -->
+  <link rel="stylesheet" href="../assets/css/custom.css" />
+  <link rel="stylesheet" href="../assets/css/style1.css">
+  <link rel="stylesheet" href="../assets/css/style.scss">
+  <link rel="stylesheet" href="../assets/css/styl2.scss">
+  <link rel="stylesheet" href="../assets/css/navbardropdown.css">
+  <style>
+    
+    html {
+    
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.hero-inner__bg_two:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(20, 19, 59, 0.2);
+    z-index: 0;
+}
+@media (max-width: 575px){
+.hero-inner__bg {
+    background-position: center;
+}
+}
+@media (max-width: 600px){
+  video{
+  width: 100% !important;
+  height: 230px !important;
+  margin-left: 0px !important;
+
+}
+}
+video{
+  width: 720px;
+  height: 410px;
+
+}
+.videoo{
+  margin-left: -60px;
+}
+#detach-button-host {
+  display: none !important;
+}
+@media screen and (max-width: 1200px) {
+  .value{
+    width: 80%;
+    margin-top: 80px;
+    }
+    .videoo{
+      margin-left: 30px;
+    }
+}
+  </style>
+  <script>
+   
+    document.onreadystatechange = function() {
+       if (document.readyState !== "complete") {
+           document.querySelector("body").style.visibility = "hidden";
+           document.querySelector("#loader").style.visibility = "visible";
+       } else {
+           document.querySelector("#loader").style.display = "none";
+           document.querySelector("body").style.visibility = "visible";
+       }
+   };
+   
+   
+   </script>
+ </head>
+
+  <body>
+    <div id="loader" class="se-pre-con"></div>
+
+    <div id="wrapper" class="wrapper">
+      <div id="main__content">
+        <!-- ======= Header Start ======= -->
+        <%- include('./partial/navbar.ejs') %>
+
+        <!-- Mobile Menu Start -->
+        <%- include('./partial/mobile_menu.ejs') %>
+        <!-- Mobile Menu Start End -->
+        <!-- ======= Header End ======= -->
+
+        <!-- ======= Main Wrapper Start ======= -->
+        <main class="main-wrapper">
+          <!-- ======= Hero inner Start ======= -->
+          <section class="hero-inner">
+            <div
+              class="hero-inner__bg hero-inner__bg_two"
+              data-bg-image="../assets/images/aboutus/headoffice/head-office.jpg"
+            >
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="page-breadcrumb">
+                      <!-- <h1 class="heading">Head Office</h1> -->
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ======= Hero inner End ======= -->
+
+          <!-- ======= Services Details Start ======= -->
+          <section class="services services--details  pb-50">
+            <div class="container">
+              <h1 style="padding-bottom: 50px; margin-left: 65px; padding-top: 50px;font-weight: 600;" class="heading heading--big">Head Office</h1>
+              <div class="row services__details align-items-center">
+              
+                <div class="col-lg-6 mb-80">
+                  <div class="content content--right">
+                   
+
+                    <h4 style="font-size: 30px;" class="heading heading--big">Office Accommodation <br> Multi Mansion</h4>
+                    <p class="paragraph">
+                      The Office of the Society was initially in a rental building situated in main Commercial Area
+                       of G-8 Markaz Islamabad. The Managing Committee while considering progressive 
+                       inflationary trend took a visionary decision to purchase this is building.
+                        The building was upgraded from 4 to 5 stories with stat of the art 
+                        renovation.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-80">
+                  <div class="image image--small">
+                    <img
+                      src="../assets/images/aboutus/headoffice/multi2.jpg"
+                      alt="Multi Mansion"
+                    />
+                    <!-- <i
+                      class="flaticon flaticon-management icon icon--circle wow fadeInLeft animated"
+                      data-wow-delay=".3s"
+                      data-wow-duration="1.5s"
+                    ></i> -->
+                  </div>
+                </div>
+                    
+                      <div
+                        class="col-lg-6 wow fadeInLeft animated"
+                        data-wow-delay=".3s"
+                        data-wow-duration="1.5s"
+                      >
+                      <video class="videoo" controls loop autoplay>
+                        <source src="../assets/images/aboutus/headoffice/head_office.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      Your browser does not support the video tag.
+                      </video>
+                      </div>
+                    
+                  
+                    <!-- <i
+                      class="flaticon flaticon-management icon icon--center wow fadeInUp animated"
+                      data-wow-delay=".5s"
+                      data-wow-duration="2s"
+                    ></i> -->
+                  
+                <div class="col-lg-5 col-lg-offset-1 mb-80 value">
+                  <div style="margin-left: 30px;" class="content">
+                    <h2 class="heading heading--small">
+                      Value for Money
+                    </h2>
+                    <p class="paragraph">
+                      The existing space in use of the Society is sufficient for its present needs besides
+                      spacious and comfortable margin for its visiting’s members. The said decision has
+                      been highly instrumental in its image building, credibility, market repute and
+                      provided a respectable atmosphere for handling its affairs with public and 
+                      members. It is a fixed asset of the Society with progressive appreciation
+                       in its valve and easy access to every one being located in the heart of
+                        the capital city.
+                    </p>
+                  </div>
+                </div>
+                
+               
+              
+              </div>
+            </div>
+          </section>
+          <!-- ======= Services Details End ======= -->
+
+       
+        </main>
+        <!-- ======= Main Wrapper End ======= -->
+
+        <!-- Footer -->
+        <%- include('./partial/footer.ejs') %>
+        <div class="progress-wrap active-progress">
+          <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 227.034;"></path>
+          </svg>
+        </div>
+
+    <!-- ======= jQuery Library ======= -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/dependencies/slick/slick.min.js"></script>
+    <script src="../assets/dependencies/parallax/parallaxie.js"></script>
+    <script src="../assets/dependencies/greensock/TweenMax.min.js"></script>
+    <script src="../assets/dependencies/tilt/vanilla-tilt.min.js"></script>
+    <script src="../assets/dependencies/counter-up/jquery.counterup.min.js"></script>
+    <script src="../assets/dependencies/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../assets/dependencies/animation/wow.min.js"></script>
+    <script src="../assets/dependencies/fancybox/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/modernizr-3.5.0.min.js"></script>
+    <script src="../assets/dependencies/hoverdir/jquery.hoverdir.js"></script>
+    <script src="../assets/dependencies/niceselect/jquery.nice-select.min.js"></script>
+    <script src="../assets/dependencies/anime/anime.min.js"></script>
+    <script src="../assets/dependencies/niceselect/jquery.nice-select.min.js"></script>
+    <script src="../assets/dependencies/isotope/isotope.pkgd.min.js"></script>
+    <script src="../assets/dependencies/isotope/imagesloaded.pkgd.min.js"></script>
+
+    <!-- ======= Main JS ======= -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- ======= Custom JS ======= -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/navbardropdown.js"></script>
+  </body>
+</html>

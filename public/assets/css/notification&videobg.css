@@ -1,0 +1,178 @@
+@font-face {
+  font-family: notificationfont;
+  src: url("/fonts/static/ROCK.TTF");
+}
+.scrolll a{
+    color: black;
+  }
+  .newsfeed{
+    position: absolute;
+      z-index: 999;
+      height: 272px;
+      overflow: hidden;
+      margin-top: -30px;
+      margin-right: -100px;
+   
+  }
+  
+  .scrolll{
+    height: 380px;
+  width: 315px;
+    overflow-y:scroll !important;/*Also...*/
+  
+      overflow-x:hidden;
+  }
+  .scrolll{
+    scrollbar-width: thin; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  
+  .scrolll::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background-color: transparent !important;
+    display: none;
+  }
+  
+  .scrolll::-webkit-scrollbar {
+    width: 32px !important; 
+   
+  }
+  
+  .scrolll::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  .titlenews{
+    text-align: left;
+      border-radius: 10px;
+      font-family: notificationfont;
+      font-size: 14px;
+      background-color: rgba(255,255,255,0.8);
+      /* background-color: rgba(0,0,0,0.5); */
+      
+      padding-top: 5px;
+      padding-bottom: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: black;
+      width: 280px;
+      height: 72px;
+      margin-bottom: 20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 3;
+    /* <integer> values */
+    
+  }
+
+  
+  @media screen and (max-width: 1500px) {
+    .scrolll{
+      height: 380px;
+    width: 315px;
+      overflow-y:scroll !important;/*Also...*/
+    
+        overflow-x:hidden;
+    }
+    .scrolll{
+      scrollbar-width: thin; /* Firefox */
+      -ms-overflow-style: none; /* IE 10+ */
+    }
+    
+    .scrolll::-webkit-scrollbar-track {
+      -webkit-box-shadow: none !important;
+      background-color: transparent !important;
+      display: none;
+    }
+    
+    .scrolll::-webkit-scrollbar {
+      width: 32px !important; 
+     
+    }
+    
+    .scrolll::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+    .titlenews {
+      text-align: left;
+      border-radius: 10px;
+    
+      background-color: rgba(255,255,255,0.8);
+      /* background-color: rgba(0,0,0,0.5); */
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      color: black;
+      width: 280px;
+      height: 55px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      
+      /* border-left: 100px solid transparent; */
+      /* border-right: 100px solid transparent; */
+  }
+ 
+  .newsfeed{
+    position: absolute;
+      z-index: 999;
+      height: 225px;
+      overflow: hidden;
+      margin-top: 50px;
+      margin-right: -100px;
+   
+  }
+  }
+  @media screen and (max-width: 600px) {
+    .titlenews{
+      text-align: left;
+      border-radius: 10px;
+      /* background-color: rgba(0,0,0,0.5); */
+      background-color: rgba(255,255,255,0.8);
+      /* -webkit-box-shadow: 5px 5px 10px 5px white;
+      box-shadow: 5px 5px 10px 5px white; */
+      padding-top: 5px;
+      padding-bottom: 20px;
+      color: black;
+      width: 260px;
+      height: 50px;
+      margin-bottom: 10px;
+      
+       overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    
+    /* <integer> values */
+     -webkit-line-clamp: 2;
+  }
+  .newsfeed{
+    position: absolute;
+      z-index: 999;
+      height: 175px;
+      overflow: hidden;
+      margin-top: 20px;
+      margin-right: 235px;
+      width: 90%;
+   
+  }
+  .scrolll::-webkit-scrollbar {
+    width: 54px !important; 
+   
+  }
+  }
+  
+  #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  #detach-button-host {
+      display: none !important;
+  }

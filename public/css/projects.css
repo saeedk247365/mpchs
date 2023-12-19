@@ -1,0 +1,1000 @@
+body {
+  background-color: #100e17;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+.mobileorchard{
+ 
+  width: 830px;
+}
+body.hovered1 {
+  background-image: url("/assets/images/ourproject/bg/123.jpg");
+  /* height: 500px; */
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  background-attachment: fixed;
+  overflow: auto;
+}
+
+body.hovered2
+ {
+  background-image: url("/assets/images/ourproject/bg/B-17 Gate.jpg");
+  height: 500px;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  background-attachment: fixed;background-attachment: fixed;
+  overflow: auto;
+  }
+body.hovered3 
+{
+  background-image: url("/assets/images/ourproject/bg/F-17.jpg");
+  height: 500px;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  background-attachment: fixed;
+  overflow: auto;
+}
+
+body.hovered4
+ {
+   background-image: url("/assets/images/ourproject/bg/res1.jpeg");
+   height: 500px;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+display: flex;
+background-attachment: fixed;
+overflow: auto;
+}
+
+  
+.projectdescription1{
+  display: block !important;
+  color: black;
+  
+}
+.projectdescription2{
+  display: block !important;
+  color: black;
+  
+}
+.projectdescription3{
+  display: block !important;
+  color: red;
+  
+}
+.projectdescription4{
+  display: block !important;
+  color: red;
+  
+}
+.detaill1{
+  display: none;
+}
+.detaill2{
+  display: none;
+}.detaill3{
+  display: none;
+}.detaill4{
+  display: none;
+}
+ .container-fluid {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  top: 100px;
+  left: calc(50% - 300px);
+  display: flex;
+} 
+
+
+
+.whenhover1{
+  height: 100px;
+    width: 180px;
+}
+
+.whenhover1:hover{
+  height: 300px;
+    width: 180px;
+}
+
+
+.whenhover2:hover{
+  height: 300px;
+    width: 180px;
+}
+.whenhover1{
+  height: 100px;
+    width: 180px;
+}
+
+.whenhover1:hover{
+  height: 300px;
+    width: 180px;
+}
+.whenhover1{
+  height: 100px;
+    width: 180px;
+    transition: 0.9s ease-out;
+
+}
+
+.whenhover2{
+  height: 300px;
+    width: 180px;
+  
+}
+
+.whenhover1:hover{
+  height: 300px;
+    width: 180px;
+}
+
+.card {
+ 
+
+  display: flex;
+   /* height: 380px;  */
+    width: 380px;
+  /* background-color: #17141d; */
+  border-radius: 10px;
+   /* box-shadow: -1rem 0 3rem #000;  */
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: fixed;
+  left: 0px;
+
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+.card11 {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+.card12 {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+.card13 {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+.card14 {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+
+.card:hover ~ .card {
+  position: fixed;
+  left: 50px;
+  transition: 0.9s ease-out;
+}
+.card1 {
+  position: fixed;
+  left: 200px;
+  transition: 0.4s ease-out;
+}
+
+h3.title1 {
+  color: white;
+  display: none;
+  font-weight: 300;
+  position: absolute;
+  right: 20px;
+  padding-left: 10px;
+  top: 15px;
+  font-family: myprojectstitle;
+  margin-bottom: 10px;
+  /* background: #cccccc; */
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+
+.centrr{
+  padding-right: 15px;
+}
+
+
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.logo.whenhover2{
+  max-width: 90px;
+    height: auto;
+    margin-left: 25px;
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+.titlee{
+  
+  left: 8px !important;
+}
+
+/* after position fixed */
+div#hoverr1 {
+  /* background-image: url("/assets/images/ourproject/islamabadgarden.png"); */
+  margin-left: 32%;
+  width: 180px;
+  z-index: 999;
+}
+div#hoverr2 {
+  margin-left: 39%;
+  width: 180px;
+  z-index: 999;
+}
+div#hoverr3 {
+  margin-left: 46%;
+  width: 180px;
+  z-index: 999;
+}
+div#hoverr4 {
+  margin-left: 53%;
+  width: 180px;
+  z-index: 999;
+}
+@font-face {
+  font-family: myprojectstitle;
+  src: url('/fonts/static/Outfit-Bold.ttf');
+}
+@font-face {
+  font-family: myprojectstitle1;
+  src: url('/fonts/static/BebasNeue-Regular.ttf');
+}
+@font-face {
+  font-family: myprojectstitle2;
+  src: url('/fonts/static/SupermercadoOne-Regular.ttf');
+}
+
+.titleclass{
+  background-color: rgba(0,0,0,0.5);
+  padding-left: 10px;
+}
+
+.titleclass h2{
+  font-family: myprojectstitle;
+  letter-spacing: 0.2rem;
+
+  color: white;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 200px;
+  padding-top: 10px;
+}
+.titleclass p{
+  color: white;
+  margin-left: 100px;
+  padding-top: 10px;
+  
+}
+.about--inner {
+  margin-top: 30%;
+  padding: 130px 0 100px 0;
+}
+
+/* welcome animation */
+
+.container4 {
+  width: 70%;
+ 
+  text-align: center;
+  margin-top: 300px !important;
+  padding-bottom: 400px;
+  
+}
+
+.container3 {
+  width: 70%;
+  margin-left: 20%;
+  text-align: center;
+  margin-top: 70px;
+  padding-bottom: 30px;
+}
+.container2 {
+  width: 70%;
+  text-align: center;
+  margin-top: 70px;
+  padding-bottom: 30px;
+}
+.container1 {
+  width: 70%;
+  margin-left: 20%;
+  text-align: center;
+  margin-top: 70px;
+  padding-bottom: 30px;
+}
+
+/* .container4 h1:nth-child(1) {
+  color: white;
+  font-family: myprojectstitle1;
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 30px;
+  width: 280px;
+  animation: type 2s steps(60,end) forwards;
+} */
+.container3 h1:nth-child(1) {
+  color: white;
+  font-family: myprojectstitle1;
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 30px;
+  width: 280px;
+  animation: type 2s steps(60,end) forwards;
+}
+.container2 h1:nth-child(1) {
+  color: white;
+  font-family: myprojectstitle1;
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0 0 0 38%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 30px;
+  width: 280px;
+  animation: type 2s steps(60,end) forwards;
+}
+.container1 h1:nth-child(1) {
+  color: white;
+  font-family: myprojectstitle1;
+letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 30px;
+  width: 280px;
+  animation: type 2s steps(60,end) forwards;
+}
+
+
+
+/* .container4 h1:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  white-space: nowrap;
+   background: linear-gradient(to right, #f8b195, #f67280, #c06c84); 
+  font-size: 70px;
+  font-weight: 600;
+  font-size: 60px;  
+  width: 830px;
+color: white;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(200,end) 2s forwards, blink .5s step-end infinite alternate;
+} */
+.container3 h1:nth-child(2) {
+  opacity: 0;
+  font-family: myprojectstitle2;
+  margin: 0 auto auto auto;
+  white-space: nowrap;
+  /* background: linear-gradient(to right, #f8b195, #f67280, #c06c84); */
+  font-size: 70px;
+  font-weight: 600;
+  font-size: 70px;  
+  width: 420px;
+color: white;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(100,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+.container2 h1:nth-child(2) {
+  opacity: 0;
+  font-family: myprojectstitle2;
+  margin: 0 auto auto auto;
+  white-space: nowrap;
+  /* background: linear-gradient(to right, #f8b195, #f67280, #c06c84); */
+  font-size: 70px;
+  font-weight: 600;
+  font-size: 70px;  
+  width: 900px;
+color: white;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(100,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+.container1 h1:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  white-space: nowrap;
+  /* background: linear-gradient(to right, #f8b195, #f67280, #c06c84); */
+  font-weight: 600;
+  font-size: 70px;
+    width: 740px;
+color: white;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(100,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 3px none;
+    
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 3px none;
+    
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: none;
+    
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 3px none;
+    
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* //About */
+section{
+  width: 100%;
+}
+.about--inner {
+  margin-top: 30%;
+  background-color: #ccc;
+  padding: 100px 0 0px 0;
+}
+.about-agency__right .list ul li li .paragraph i::before {
+  font-size: 10px;
+  vertical-align: middle;
+  color: #0554f2;
+}
+.pt-120 {
+  padding-top: 120px;
+  background: white;
+}
+.case-details__video {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 23%;
+}
+.facility {
+  padding-bottom: 100px;
+  background: white;
+}
+.clss{
+  margin-left: 20px;
+  margin-bottom: 400px;
+}
+.about-image__agency_big {
+  border-radius: 10px;
+  margin-bottom: 400px;
+}
+.equall{
+  margin-top: 50px;
+}
+img.about-image__agency_big.wow.fadeInDown.animated.whenhover2{
+  width: 690px;
+  height: 617px;
+  height: auto;
+  border-radius: 10px;
+    margin-bottom: 400px;
+  
+  z-index: -1;
+}
+
+.headdd{
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* slide show */
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+}
+.slideshow--hero {
+  z-index: 3;
+  left: 0;
+  top: 50%;
+  height: 85%;
+  transform: translateY(-50%) skewY(-10deg);
+  transform-origin: center;
+  overflow: hidden;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+.slideshow--hero .slides {
+  position: absolute;
+  left: 0;
+  top: -10%;
+  width: 100vw;
+  height: 100vh;
+  animation: 11s slideshow-hero-mobile -3s infinite;
+}
+.slideshow--hero .slide1 {
+  background-image: url("/assets/images/ourproject/bg/projectbg1.jpg");
+  animation: 20s slides-set-1 -0.1s infinite;
+}
+.slideshow--hero .slide2 {
+  background-image: url("/assets/images/ourproject/bg/projectbg2.jpg");
+  animation: 20s slides-set-2 -0.1s infinite;
+}
+.slideshow--hero .slide3 {
+  background-image: url("/assets/images/ourproject/bg/projectbg3.jpg");
+  animation: 20s slides-set-3 -0.1s infinite;
+}
+@media (min-width: 600px) {
+  .slideshow--hero {
+    left: 50%;
+    top: 0;
+    width: 67%;
+    height: 100%;
+    transform: translateX(-50%) skewX(-10deg);
+  }
+  .slideshow--hero .slides {
+    top: 0;
+    left: -25%;
+    height: 100%;
+    animation: 11s slideshow-hero -3s infinite;
+  }
+}
+.slideshow--contrast {
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  transform: none;
+}
+.slideshow--contrast--before {
+  left: 0;
+}
+.slideshow--contrast--before .slides {
+  width: 100vw;
+}
+.slideshow--contrast--after {
+  z-index: 2;
+  left: auto;
+  right: 0;
+}
+.slideshow--contrast--after .slides {
+  width: 100vw;
+  left: auto;
+  right: 0;
+}
+.slideshow--contrast .slides {
+  animation: 14s slideshow-contrast -5s infinite;
+}
+.slideshow--contrast .slide1 {
+  background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url('/assets/images/ourproject/bg/projectbg1.jpg');
+  animation: 20s slides-set-1 -0.2s infinite;
+}
+.slideshow--contrast .slide2 {
+  background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url('/assets/images/ourproject/bg/projectbg2.jpg');
+  animation: 20s slides-set-2 -0.2s infinite;
+}
+.slideshow--contrast .slide3 {
+  background-image: url('/assets/images/ourproject/bg/projectbg3.jpg');
+  animation: 20s slides-set-3 -0.2s infinite;
+  background-color:linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%) ;
+}
+.slideshow--contrast--after {
+  top: auto;
+  bottom: 0;
+}
+.slideshow--contrast--after .slides {
+  animation: 13s slideshow-contrast -13s infinite;
+}
+.slideshow--contrast--after .slide {
+  background-position: right;
+}
+.slideshow--contrast--after .slide1 {
+  animation: 20s slides-set-1 infinite;
+}
+.slideshow--contrast--after .slide2 {
+  animation: 20s slides-set-2 infinite;
+}
+.slideshow--contrast--after .slide3 {
+  animation: 20s slides-set-3 infinite;
+}
+@media (min-width: 600px) {
+  .slideshow--contrast {
+    width: 50%;
+    height: 100%;
+  }
+  .slideshow--contrast--after {
+    top: 0;
+    bottom: auto;
+  }
+  .slideshow--contrast--after .slides {
+    width: 50vw;
+  }
+}
+
+.slides,
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes slideshow-hero-mobile {
+  0% {
+    transform: scale(1) skewY(10deg);
+  }
+  50% {
+    transform: scale(1.05) skewY(10deg);
+  }
+  100% {
+    transform: scale(1) skewY(10deg);
+  }
+}
+@keyframes slideshow-hero {
+  0% {
+    transform: scale(1) skewX(10deg);
+  }
+  50% {
+    transform: scale(1.05) skewX(10deg);
+  }
+  100% {
+    transform: scale(1) skewX(10deg);
+  }
+}
+@keyframes slideshow-contrast {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes slides-set-1 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  31% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  34% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  97% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slides-set-2 {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  31% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  34% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  64% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  67% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+@keyframes slides-set-3 {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  64% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  67% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  97% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
+.slideremove{
+  display: none;
+}
+
+@media (max-width: 600px) {
+  div#hoverr1 {
+    /* background-image: url("/assets/images/ourproject/islamabadgarden.png"); */
+    margin-left: 10%;
+    width: 180px;
+    z-index: 999;
+  }
+  div#hoverr2 {
+    /* background-image: url("/assets/images/ourproject/islamabadgarden.png"); */
+    margin-left: 20%;
+    width: 180px;
+    z-index: 999;
+  }
+  div#hoverr3 {
+    /* background-image: url("/assets/images/ourproject/islamabadgarden.png"); */
+    margin-left: 30%;
+    width: 180px;
+    z-index: 999;
+  }
+  div#hoverr4 {
+    /* background-image: url("/assets/images/ourproject/islamabadgarden.png"); */
+    margin-left: 40%;
+    width: 180px;
+    z-index: 999;
+  }
+  .container-fluid {
+    position: fixed;
+    height: 300px;
+    width: 600px;
+    top: 150px;
+    left: calc(50% - 300px);
+    display: flex;
+    z-index: 9999;
+}
+.logo-small.logosmall.whenhover2{
+  width: 60px;
+  height: 40px;
+}
+.rt-slide-nav {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  display: none;
+  padding: 30px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  -webkit-box-shadow: 0 0 10px 0 #0000001c;
+  box-shadow: 0 0 10px 0 #0000001c;
+  top: 100%;
+  z-index: 99999;
+}
+body.hovered1 {
+  background-image: url(/assets/images/ourproject/bg/123.jpg) !important;
+  /* height: 500px; */
+  background-color: #cccccc !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative !important;
+  z-index: 0 !important;
+  background-attachment: fixed !important;
+  overflow: auto !important;
+}
+.container2 h1:nth-child(2) {
+  opacity: 0;
+  font-family: myprojectstitle2;
+  margin: 0 auto auto auto;
+  white-space: nowrap;
+  /* background: linear-gradient(to right, #f8b195, #f67280, #c06c84); */
+  font-size: 25px !important;
+  font-weight: 600;
+  width: 300px !important;
+  color: white;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(100,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+.container2 h1:nth-child(1) {
+  color: white;
+  font-family: myprojectstitle1;
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 25px;
+  margin: 0 0 0 25%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  width: 300px;
+  animation: type 2s steps(60,end) forwards;
+}
+
+body.hovered2 {
+  background-image: url('/assets/images/ourproject/bg/B-17 Gate.jpg') !important;
+  height: 550px !important;
+  background-color: #cccccc !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative !important;
+  z-index: 0 !important;
+  background-attachment: fixed !important;
+  background-attachment: fixed !important;
+  overflow: auto !important;
+}
+body.hovered3 {
+  background-image: url('/assets/images/ourproject/bg/F-17.jpg') !important;
+  height: 500px !important;
+  background-color: #cccccc !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative !important;
+  z-index: 0 !important;
+  background-attachment: fixed !important;
+  overflow: auto !important;
+}
+body.hovered4 {
+  background-image: url('/assets/images/ourproject/bg/res1.jpeg') !important;
+  height: 500px !important;
+  background-color: #cccccc !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative !important;
+  z-index: 0 !important;
+  display: flex !important;
+  background-attachment: fixed !important;
+  overflow: auto !important;
+}
+.container4 {
+  width: 70%;
+ 
+  text-align: center;
+  margin-top: 400px !important;
+  padding-bottom: 400px;
+  position: absolute;
+}
+
+.mobilee11{
+  width: 250px !important;
+}
+.mobileorchard{
+  width: 300px !important;
+  font: 25px !important;
+}
+.container2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+  padding-bottom: 30px;
+}
+
+}
+
+.main-menu--agency nav > ul > li {
+  margin-right: 10px;
+}
+/* #detach-button-host {
+  display: none !important;
+} */

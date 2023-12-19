@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Page Title -->
+  <title>
+
+   MPCHS | Our-Team
+  </title>
+  <link rel = "icon" type = "image/png" href = "../icon/multi logo.ico">
+  <!-- Meta Data -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" />
+
+  <!-- ======= Icons ======= -->
+  <link rel="stylesheet" href="../assets/dependencies/flaticon/flaticon.css" />
+  <link rel="stylesheet" href="../assets/css/all.min.css" />
+
+  <!-- ======= Carousel  ======= -->
+  <link rel="stylesheet" href="../assets/dependencies/slick/slick.min.css" />
+
+  <!-- ======= Animation  ======= -->
+  <link rel="stylesheet" href="../assets/dependencies/animation/animate.min.css" />
+  <link rel="stylesheet" href="../assets/dependencies/animation/custom-animation.css" />
+  <link rel="stylesheet" href="../assets/dependencies/fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- ======= Main Stylesheet ======= -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <!-- ======= Custom Stylesheet ======= -->
+  <link rel="stylesheet" href="../assets/css/custom.css" />
+  <link rel="stylesheet" href="../assets/css/style1.css">
+  <link rel="stylesheet" href="../assets/css/style.scss">
+  <link rel="stylesheet" href="../assets/css/styl2.scss">
+  <link rel="stylesheet" href="../assets/css/navbardropdown.css">
+  <script>
+   
+    document.onreadystatechange = function() {
+       if (document.readyState !== "complete") {
+           document.querySelector("body").style.visibility = "hidden";
+           document.querySelector("#loader").style.visibility = "visible";
+       } else {
+           document.querySelector("#loader").style.display = "none";
+           document.querySelector("body").style.visibility = "visible";
+       }
+   };
+   
+   
+   </script>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+<!-- .main-menu--agency nav > ul > li {
+  margin-right: 15px;
+} -->
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000428, #004683)
+}
+.hero-inner__bg_two:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: rgba(20, 19, 59, 0.75); */
+    background: none;
+    z-index: 0;
+}
+
+
+.container .row .col-lg-4 {
+    display: flex;
+    justify-content: center
+}
+
+.card {
+    position: relative;
+    padding: 0;
+    margin: 0 !important;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 280px;
+    max-height: 340px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+}
+
+.card .card-image {
+    width: 100%;
+    max-height: 340px
+}
+
+.card .card-image img {
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover
+}
+
+.card .card-content {
+    position: absolute;
+    bottom: -180px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    min-height: 140px;
+    width: 100%;
+    transition: bottom .4s ease-in;
+    box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.card:hover .card-content {
+    bottom: 0px
+}
+
+.card:hover .card-content h4,
+.card:hover .card-content h5 {
+    transform: translateY(10px);
+    opacity: 1
+}
+
+.card .card-content h4,
+.card .card-content h5 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    transition: 0.8s;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition-delay: 0.2s
+}
+
+.card .card-content h5 {
+    transition: 0.5s;
+    font-weight: 200;
+    font-size: 0.8rem;
+    letter-spacing: 2px
+}
+
+.card .card-content .social-icons {
+    list-style: none;
+    padding: 0
+}
+
+.card .card-content .social-icons li {
+    margin: 10px;
+    transition: 0.5s;
+    transition-delay: calc(0.15s * var(--i));
+    transform: translateY(50px)
+}
+
+.card:hover .card-content .social-icons li {
+    transform: translateY(20px)
+}
+
+.card .card-content .social-icons li a {
+    color: #fff
+}
+
+.card .card-content .social-icons li a span {
+    font-size: 1.3rem
+}
+.mtt{
+  margin-top: 50px;
+}
+
+.card .carde-content1 {
+    position: absolute;
+    bottom: -205px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    min-height: 140px;
+    width: 100%;
+    transition: bottom .4s ease-in;
+    box-shadow: 0 -10px 10px rgb(255 255 255 / 10%);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+   .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media(max-width: 991.5px) {
+    .container {
+        margin-top: 20px
+    }
+
+    .container .row .col-lg-4 {
+        margin: 20px 0px
+    }
+   
+}
+.oneline{
+  font-size: 10px  !important;
+  color: black;
+  font-weight: 500 !important;
+}
+@media (max-width: 575px){
+.hero-inner__bg {
+    background-position: center;
+}
+}
+   </style>
+ </head>
+
+  <body>
+    <div id="loader" class="se-pre-con"></div>
+
+    <div id="wrapper" class="wrapper">
+      <div id="main__content">
+        <!-- ======= Header Start ======= -->
+        <%- include('./about-us/partial/navbar.ejs') %>
+
+        <!-- Mobile Menu Start -->
+        <%- include('./about-us/partial/mobile_menu.ejs') %>
+        <!-- Mobile Menu Start End -->
+        <!-- ======= Header End ======= -->
+
+        <!-- ======= Main Wrapper Start ======= -->
+        <main class="main-wrapper">
+          <!-- ======= Hero inner Start ======= -->
+          <section class="hero-inner">
+            <div
+              class="hero-inner__bg hero-inner__bg_two"
+              data-bg-image="../assets/images/team/front/head-office.jpg"
+            >
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="page-breadcrumb">
+                      <!-- <h1 class="heading">Managing Comittee</h1> -->
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ======= Hero inner End ======= -->
+
+          <!-- ======= Services Details Start ======= -->
+          <section style="background-color: #f7f7f7;" class="services services--details  pb-50">
+            <div class="container">
+              <br><br>
+              <h1 style="padding-bottom: 30px;color:black; text-align:center; padding-top: 30px;font-weight: 600;" class="heading heading--big">Managing Comittee will be announce after Elections.</h1>
+
+<br><br><br><br>
+              <!-- <p style="text-indent: 50px; text-align: justify;letter-spacing: 3px; padding-bottom: 20px;">Members of the organization's management committee/board are ultimately responsible for ensuring that the organization
+                 is well-run and achieving the goals for which it was created. Keeping an eye on the organization's actions to make
+                  ensuring they adhere to the organization's fundamental principles, objectives, and values.</p> -->
+              <!-- <div class="row services__details align-items-center">
+                <div class="col-lg-12 mb-80">
+                  <div class="container">
+                    <div class="row reveal">
+                        <div class="col-lg-4">
+                            <div class="card p-0">
+                                <div class="card-image"> <img src="/assets/images/team/Muhammad Aslam Rao.jpg" alt=""> </div>
+                                <div class="card-content d-flex flex-column align-items-center carde-content1">
+                                  <h4 style="color: black;" class="pt-2">Muhammad Aslam Rao</h4>
+                                  <h4 style="color: black;">President</h4>
+                                  <h5 class="oneline">Former Secretary </h5> <h5 class="oneline">National Book Foundation,</h5> 
+                                  <h5 class="oneline">Ministry of Education, Islamabad</h5>  
+                                   
+                                   
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card p-0">
+                                <div class="card-image"> <img src="/assets/images/team/Ch. Zafar Ali.jpg" alt=""> </div>
+                                <div class="card-content d-flex flex-column align-items-center">
+                                  <h4 style="color: black;" class="pt-2">Engr. Ch. Zafar Ali</h4>
+                                  <h4 style="color: black;">Vice President</h4>
+                                  <h5 class="oneline">Former Director General </h5>  
+                                  <h5 class="oneline">Pakistan Telecommunication Company Limited</h5>  
+                                   
+                                  
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card p-0">
+                                <div class="card-image"> <img src="/assets/images/team/nadeem sarwar.jpg" alt="Nadeem Sarwar "> </div>
+                                <div class="card-content d-flex flex-column align-items-center">
+                                  <h4 style="color: black;" class="pt-2">Ch. Nadeem Sarwar</h4>
+                                  <h4 style="color: black;">General Secretary</h4>
+                                  <h5 class="oneline">General Secretary Industrial Engineer </h5>  
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="container mtt">
+                  <div class="row reveal">
+                      <div class="col-lg-4">
+                          <div class="card p-0">
+                              <div class="card-image"> <img src="/assets/images/team/Mussadaq Shahid.jpg" alt=""> </div>
+                              <div class="card-content d-flex flex-column align-items-center">
+                                <h4 style="color: black;" class="pt-2">Syed Mussadiq Shahid</h4>
+                                <h4 style="color: black;">Finance Secretary</h4>
+                                <h5 class="oneline">Former SVP Allied Bank </h5>  
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4">
+                          <div class="card p-0">
+                              <div class="card-image"> <img src="/assets/images/team/Madam Kalsoom.jpg" alt=""> </div>
+                              <div class="card-content d-flex flex-column align-items-center">
+                                <h4 style="color: black;" class="pt-2">Kalsoom Rafiqu</h4>
+                                <h4 style="color: black;">Information Secretary</h4>
+                                <h5 class="oneline">Advocate High Court Islamabad </h5>  
+                                <h5 class="oneline">Former Vice President, Islamabad Bar Council </h5>  
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4">
+                          <div class="card p-0">
+                              <div class="card-image"> <img src="/assets/images/team/Mohi-ud-Din Mustafa.jpg" alt=""> </div>
+                              <div class="card-content d-flex flex-column align-items-center">
+                                <h4 style="color: black;" class="pt-2">Mohiuddin Mustafa</h4>
+                                <h4 style="color: black;">Executive Member</h4>
+                                <h5 class="oneline">Agriculturist / Business</h5>    
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="container mtt">
+                <div class="row reveal">
+                    <div class="col-lg-4">
+                        <div class="card p-0">
+                            <div class="card-image"> <img src="/assets/images/team/Col Rehan.jpg" alt=" Malik Rehan Mehmood Awan"> </div>
+                            <div class="card-content d-flex flex-column align-items-center ">
+                              <h4 style="color: black;" class="pt-2">Malik Rehan Mehmood Awan</h4>
+                              <h4 style="color: black;">Executive Member</h4>
+                              <h5 class="oneline">(Retd) Colonel, Pak Army </h5>  
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-0">
+                            <div class="card-image"> <img src="/assets/images/team/Col Saleem.jpg" alt=""> </div>
+                            <div class="card-content d-flex flex-column align-items-center">
+                              <h4 style="color: black;" class="pt-2">Muhammad Saleem</h4>
+                              <h4 style="color: black;">Executive Member</h4>
+                              <h5 class="oneline">(Retd) Lt. Colonel, Pak Army </h5>  
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-0">
+                            <div class="card-image"> <img src="/assets/images/team/Amjad Ali Awan.jpg" alt=""> </div>
+                            <div class="card-content d-flex flex-column align-items-center">
+                              <h4 style="color: black;" class="pt-2">Amjad Ali Awan</h4>
+                              <h4 style="color: black;">Executive Member</h4>
+                              <h5 class="oneline">Database Administrator MITS Solution</h5>    
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+                
+                </div>
+               
+              
+               
+              
+              </div> -->
+            </div>
+          </section>
+          <!-- ======= Services Details End ======= -->
+
+       
+        </main>
+        <!-- ======= Main Wrapper End ======= -->
+
+        <!-- Footer -->
+        <%- include('./about-us/partial/footer.ejs') %>
+        <div class="progress-wrap active-progress">
+          <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 227.034;"></path>
+          </svg>
+        </div>
+
+    <!-- ======= jQuery Library ======= -->
+    <script>
+      function reveal() {
+var reveals = document.querySelectorAll(".reveal");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("active");
+} else {
+  reveals[i].classList.remove("active");
+}
+}
+}
+
+window.addEventListener("scroll", reveal);
+      
+      </script>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/dependencies/slick/slick.min.js"></script>
+    <script src="../assets/dependencies/parallax/parallaxie.js"></script>
+    <script src="../assets/dependencies/greensock/TweenMax.min.js"></script>
+    <script src="../assets/dependencies/tilt/vanilla-tilt.min.js"></script>
+    <script src="../assets/dependencies/counter-up/jquery.counterup.min.js"></script>
+    <script src="../assets/dependencies/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../assets/dependencies/animation/wow.min.js"></script>
+    <script src="../assets/dependencies/fancybox/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/modernizr-3.5.0.min.js"></script>
+    <script src="../assets/dependencies/hoverdir/jquery.hoverdir.js"></script>
+    <script src="../assets/dependencies/niceselect/jquery.nice-select.min.js"></script>
+    <script src="../assets/dependencies/anime/anime.min.js"></script>
+    <script src="../assets/dependencies/niceselect/jquery.nice-select.min.js"></script>
+    <script src="../assets/dependencies/isotope/isotope.pkgd.min.js"></script>
+    <script src="../assets/dependencies/isotope/imagesloaded.pkgd.min.js"></script>
+
+    <!-- ======= Main JS ======= -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- ======= Custom JS ======= -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/navbardropdown.js"></script>
+  </body>
+</html>

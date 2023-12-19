@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Page Title -->
+  <title>
+
+   MPCHS | Notification
+  </title>
+  <link rel = "icon" type = "image/png" href = "../icon/multi logo.ico">
+  <!-- Meta Data -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" />
+
+  <!-- ======= Icons ======= -->
+  <link rel="stylesheet" href="../assets/dependencies/flaticon/flaticon.css" />
+  <link rel="stylesheet" href="../assets/css/all.min.css" />
+
+  <!-- ======= Carousel  ======= -->
+  <link rel="stylesheet" href="../assets/dependencies/slick/slick.min.css" />
+
+  <!-- ======= Animation  ======= -->
+  <link rel="stylesheet" href="../assets/dependencies/animation/animate.min.css" />
+  <link rel="stylesheet" href="../assets/dependencies/animation/custom-animation.css" />
+  <link rel="stylesheet" href="../assets/dependencies/fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- ======= Main Stylesheet ======= -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <!-- ======= Custom Stylesheet ======= -->
+  <link rel="stylesheet" href="../assets/css/custom.css" />
+  <link rel="stylesheet" href="../assets/css/style1.css">
+  <link rel="stylesheet" href="../assets/css/style.scss">
+  <link rel="stylesheet" href="../assets/css/styl2.scss">
+  <link rel="stylesheet" href="../assets/css/navbardropdown.css">
+  <style>
+     .responsive-table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        
+      }
+      
+    html {
+    
+    overflow-y: scroll;
+}
+.sno{
+  margin-left: -40px;
+}
+.titlenot{
+  margin-top: -40px;
+}
+.containerr {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+}
+h2 small {
+  font-size: 0.5em;
+}
+
+.responsive-table li {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  word-wrap: break-word;
+}
+.responsive-table .table-header {
+  background-color: #95A5A6;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.responsive-table .table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.responsive-table .col-1 {
+  flex-basis: 10%;
+}
+.responsive-table .col-2 {
+  flex-basis: 40%;
+}
+.responsive-table .col-3 {
+  flex-basis: 25%;
+}
+/* .responsive-table .col-4 {
+  flex-basis: 25%;
+} */
+@media all and (max-width: 767px) {
+  .responsive-table .table-header {
+    display: none;
+  }
+  .responsive-table li {
+    display: block;
+  }
+  .responsive-table .col {
+    flex-basis: 100%;
+  }
+  .responsive-table .col {
+    display: flex;
+    padding: 10px 0;
+  }
+  .responsive-table .col:before {
+    color: #6C7A89;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+}
+.hero-inner__bg_two:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    z-index: 0;
+}
+
+.mobile{
+  display: none;
+}
+.alink{
+  display: none;
+}
+@media (max-width: 575px){
+.hero-inner__bg {
+    background-position: center;
+}
+.col-1{
+  margin-left: 0px !important;
+}
+.alink{
+  display: block;
+  width: 100%;
+  margin-left: 40px;
+}
+.fullscreen{
+  display: none;
+}
+
+}
+  </style>
+  <script>
+   
+    document.onreadystatechange = function() {
+       if (document.readyState !== "complete") {
+           document.querySelector("body").style.visibility = "hidden";
+           document.querySelector("#loader").style.visibility = "visible";
+       } else {
+           document.querySelector("#loader").style.display = "none";
+           document.querySelector("body").style.visibility = "visible";
+       }
+   };
+   
+   
+   </script>
+ </head>
+
+  <body>
+    <div id="loader" class="se-pre-con"></div>
+
+    <div id="wrapper" class="wrapper">
+      <div id="main__content">
+        <!-- ======= Header Start ======= -->
+        <%- include('./partial/navbar.ejs') %>
+
+        <!-- Mobile Menu Start -->
+        <%- include('./partial/mobile_menu.ejs') %>
+        <!-- Mobile Menu Start End -->
+        <!-- ======= Header End ======= -->
+
+        <!-- ======= Main Wrapper Start ======= -->
+        <main class="main-wrapper">
+          <!-- ======= Hero inner Start ======= -->
+          <section class="hero-inner">
+            <div
+              class="hero-inner__bg hero-inner__bg_two"
+              data-bg-image="../assets/images/notification/notification.png"
+            >
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="page-breadcrumb">
+                    
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ======= Hero inner End ======= -->
+
+          <!-- ======= Services Details Start ======= -->
+          <section class="services services--details pt-130 pb-50">
+            <div class="container">
+              <h1 style="padding-bottom: 50px; margin-left: 65px; padding-top: 50px;font-weight: 600;" class="heading heading--big">Notification</h1>
+              <div class="container">
+            
+              <ul class="responsive-table">
+                <li class="table-header">
+                  <div class="col col-1">S.No</div>
+                  <div style="margin-left:-120px;" class="col col-1">Title</div>
+                  <div style="margin-right: -100px;" class="col col-3">Body</div>
+                  <!-- <div  style="margin-right: -100px;" class="col col-4">Date</div> -->
+                </li>
+               
+                <% if(notification.length){ 
+                            for(var i=0; i< notification.length; i++){%>
+                <li class="table-row">
+                  <div class="col col-1" data-label="S.NO"><%= (i+1) %></div>
+                  <div style="margin-left: -60px;" class="col col-1" data-label="Name"><%= notification[i].title %> </div>
+                  
+                  <div class="col col-4" data-label="Body">  <%= notification[i].body %><br> <a class="fullscreen" href="<%= notification[i].link %>"><%= notification[i].link %></a></div>
+                    <div class="col col-4 mobile">
+                    <a class="alink" href="<%= notification[i].link %>"><%= notification[i].link %></a></div>
+                  <!-- <div class="col col-3" data-label="Date"><%= notification[i].createdAt %>  </div> -->
+                </li>
+                <% }
+                             } else 
+                             {%>
+                              <h1>No Notification </h1>
+                              <% } %>
+              </ul>
+            </div>
+            </div>
+          </section>
+          <!-- ======= Services Details End ======= -->
+
+       
+        </main>
+        <!-- ======= Main Wrapper End ======= -->
+
+        <!-- Footer -->
+        <%- include('./partial/footer.ejs') %>
+
+    <!-- ======= jQuery Library ======= -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/dependencies/slick/slick.min.js"></script>
+    <script src="../assets/dependencies/parallax/parallaxie.js"></script>
+    <script src="../assets/dependencies/greensock/TweenMax.min.js"></script>
+    <script src="../assets/dependencies/tilt/vanilla-tilt.min.js"></script>
+    <script src="../assets/dependencies/counter-up/jquery.counterup.min.js"></script>
+    <script src="../assets/dependencies/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../assets/dependencies/animation/wow.min.js"></script>
+    <script src="../assets/dependencies/fancybox/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/modernizr-3.5.0.min.js"></script>
+    <script src="../assets/dependencies/hoverdir/jquery.hoverdir.js"></script>
+    <script src="../assets/dependencies/niceselect/jquery.nice-select.min.js"></script>
+    <script src="../assets/dependencies/anime/anime.min.js"></script>
+    <script src="../assets/dependencies/niceselect/jquery.nice-select.min.js"></script>
+    <script src="../assets/dependencies/isotope/isotope.pkgd.min.js"></script>
+    <script src="../assets/dependencies/isotope/imagesloaded.pkgd.min.js"></script>
+
+    <!-- ======= Main JS ======= -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- ======= Custom JS ======= -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/navbardropdown.js"></script>
+  </body>
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Page Title -->
+  <title>
+
+   MPCHS | Home
+  </title>
+  <link rel = "icon" type = "image/png" href = "../icon/multi logo.ico">
+  <!-- Meta Data -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="jquery-2.1.4.min.js"></script>
+  <script>
+    var interval;
+    function startTicker(){
+      $("#newsfeed li:first").slideUp(function(){
+$(this).appendTo($("#newsfeed")).slideDown();
+      });
+    }
+
+function stopTicker(){
+  clearInterval(interval);
+}
+
+$(document).ready(function(){
+  interval = setInterval(startTicker, 3000);
+  $("#newsfeed").hover(function(){
+    stopTicker();
+  }, function(){
+
+    interval = setInterval(startTicker, 3000);
+  })
+});
+
+
+function slideupnews(){
+  $("#newsfeed li:first").slideUp(function(){
+$(this).appendTo($("#newsfeed")).slideDown();
+      });
+}
+function slidedownnews(){
+
+  $("#newsfeed li:first").slideDown(function(){
+$(this).appendTo($("#newsfeed")).slideUp();
+      });
+}
+
+
+  
+  </script>
+ 
+  
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" />
+
+  <!-- ======= Icons ======= -->
+  <link rel="stylesheet" href="/assets/dependencies/flaticon/flaticon.css" />
+  <link rel="stylesheet" href="/assets/css/all.min.css" />
+
+  <!-- ======= Carousel  ======= -->
+  <link rel="stylesheet" href="/assets/dependencies/slick/slick.min.css" />
+
+  <!-- ======= Animation  ======= -->
+  <link rel="stylesheet" href="/assets/dependencies/animation/animate.min.css" />
+  <link rel="stylesheet" href="/assets/dependencies/animation/custom-animation.css" />
+  <link rel="stylesheet" href="/assets/dependencies/fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- ======= Main Stylesheet ======= -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- ======= Custom Stylesheet ======= -->
+  <link rel="stylesheet" href="/assets/css/custom.css" />
+  <link rel="stylesheet" href="/css/mapp.css" />
+  <link rel="stylesheet" href="/assets/css/style1.css">
+  <link rel="stylesheet" href="/assets/css/style.scss">
+  <link rel="stylesheet" href="/assets/css/styl2.scss">
+  <link rel="stylesheet" href="/assets/css/navbardropdown.css">
+  <link rel="stylesheet" href="/assets/css/notification&videobg.css">
+  <script>
+   
+    document.onreadystatechange = function() {
+       if (document.readyState !== "complete") {
+           document.querySelector("body").style.visibility = "hidden";
+           document.querySelector("#loader").style.visibility = "visible";
+       } else {
+           document.querySelector("#loader").style.display = "none";
+           document.querySelector("body").style.visibility = "visible";
+       }
+   };
+   
+
+   </script>
+   
+ <style>
+
+
+  
+
+   .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.9s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.titlenews:hover{
+
+  background-color: rgba(229, 55, 43, 0.5);
+}
+ </style>
+ 
+  </head>
+
+  <body>
+    <div id="loader" class="se-pre-con"></div>
+
+    <div id="wrapper" class="wrapper">
+      <div id="main__content">
+        <!-- ======= Header Start ======= -->
+        <%- include('./partials/navbar.ejs') %>
+
+        <!-- Mobile Menu Start -->
+        <div
+          class="rt-header-menu mean-container position-relative"
+          id="meanmenu"
+        >
+          <div class="mean-bar">
+            <a href="/">
+              <img
+                class="logo-small logosmall"
+                alt="MPCHS"
+                src="/assets/images/bg/multi logo.png"
+              />
+            </a>
+           
+            <span class="sidebarBtn">
+              <span class="fa fa-bars"></span>
+            </span>
+          </div>
+          <div class="rt-slide-nav">
+            <div class="offscreen-navigation">
+              <nav class="menu-main-primary-container">
+                <ul class="menu">
+                  <li>
+                    <a id="automation" style="color: #7d7d7e;" href = "javascript:return false;">ABOUT MPCHS</a>
+                    <ul class="main-menu__dropdown ">
+                      <li class="list menu-item-parent menu-item-has-children">
+                        <a class="animation" href = "javascript:return false;">About-Us</a>
+                        <ul  class="main-menu__dropdown sub-menu">
+                            <li><a href="/about-us/head-office"> Head Office</a></li>
+                            <li><a href="/about-us/financial-highlights"> Financial Highlights</a></li>
+                            <li><a href="/about-us/ISO-certificates"> ISO Certificates</a></li>
+                          </ul>
+                          </li>
+                          <li class="list menu-item-parent menu-item-has-children">
+                            <a class="animation" href = "javascript:return false;">Media Room</a>
+                            <ul  class="main-menu__dropdown sub-menu">
+                              <li><a href="/about-us/brouchers">Brochures</a></li>
+                              <!-- <li><a href="/about-us/NOCs">NOC's</a></li> -->
+                              <li><a href="/about-us/press-release">Press Releases</a></li>
+                              <li><a href="/about-us/newsletters"> NewsLetters</a></li>
+                              </ul>
+                              </li>
+                              <li class="list menu-item-parent menu-item-has-children">
+                                <a class="animation" href = "javascript:return false;">Services</a>
+                                <ul  class="main-menu__dropdown sub-menu">
+                                  <li><a href="/about-us/construction">Construction</a></li>
+                            <!-- <li><a href="/about-us/designs"> Designs</a></li> -->
+                            <li><a href="/about-us/customer-facilitation">Customer Facilitation</a></li>
+                                  </ul>
+                                  </li>
+                                  <li class="list menu-item-parent menu-item-has-children">
+                                    <a class="animation" href = "javascript:return false;">Maps</a>
+                                    <ul  class="main-menu__dropdown sub-menu">
+                                      <li><a href="/about-us/maps/Islamabad-Garden-E11">Islamabad Garden E11</a></li>
+                                <li><a href="/about-us/maps/Multi-Garden-B-17"> Multi Garden B-17</a></li>
+                                <li><a href="/about-us/maps/Tele-Garden-F-17">Tele Garden F-17</a></li>
+                                <li><a href="/about-us/maps/Multi-Residencia-Orchards">Multi Residencia & Orchards</a></li>
+                                      </ul>
+                                      </li>
+                                  
+                                </ul>
+                                <br>
+                                <li class="list menu-item-parent">
+                                  <a class="animation" href="/our-team">MANAGING COMMITTEE</a>
+                                </li>
+                                <li class="list menu-item-parent">
+                                  <a class="animation" href="/projects">PROJECTS</a>
+                                </li>
+                                <li class="list menu-item-parent">
+                                  <a class="animation" href="/gallery">GALLERY</a>
+                                </li>
+                  </li>
+                  <li class="list menu-item-parent menu-item-has-children">
+                    <a class="animation" href="javascript:return false;"
+                      >SITES LOCATION PLAN</a
+                    >
+                    <ul class="main-menu__dropdown sub-menu">
+                      <li><a href="/site-location-plane">MPCHS Site Location</a></li>
+          
+                      <li>
+                        <!-- <a href="javascript:return false;"
+                          >Pricing Plan</a> -->
+                        
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list menu-item-parent">
+                    <a class="animation" href="/contact-us">CONTACT US</a>
+                  </li>
+                  <li class="list">
+                    <button  style="background-color: #E5372B;border: none; border-radius: 8px; width: 100%;" onclick="window.location.href='/login'" class="btn btn-success">Login</button>
+                    
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Menu Start End -->
+        <!-- ======= Header End ======= -->
+
+        <!-- ======= Main Wrapper Start ======= -->
+        <main class="main-wrapper">
+         <!-- ======= Hero Start ======= -->
+        <section class="hero otherdiv">
+        
+          <div  class="hero-modern hero-modern--bg position-relative min-vh-100 d-flex align-items-center  mydiv"
+          >
+           <div class="slideshow"> 
+            <div class="slideshow-image" style="background-image: url('/assets/images/bg/homepage/1.jpg');"></div>
+            <div class="slideshow-image" style="background-image: url('/assets/images/bg/homepage/2.jpg');"></div>
+            <div class="slideshow-image" style="background-image: url('/assets/images/bg/homepage/3.jpg');"></div>
+            <div class="slideshow-image" style="background-image: url('/assets/images/bg/homepage/4.jpg');"></div>
+            <div class="slideshow-image" style="background-image: url('/assets/images/bg/homepage/bg5.jpg');"></div>
+          </div> 
+          <div class="container-fluid">
+              
+              <div class="row">
+                <div class='wrapper1'>
+                  <div class="col-md-offset-3 col-md-9 newsfeed">
+                   
+                    <ul style="position: absolute;" class="scrolll">
+                      <% if(notification.length==1){ 
+                        for(var i=0; i< notification.length; i++){%>
+                          <a href="/notification/more-detail"> <li id="newsid" class="titlenews"><%= notification[i].title %></a>
+                            
+                            </li>
+                          
+<%}
+                        }else if(notification.length==2){ 
+                        for(var i=0; i< notification.length; i++){%>
+                          <a href="/notification/more-detail"> <li id="newsid" class="titlenews"><%= notification[i].title %></li></a>
+                          <% } %>
+                          
+                        
+<%}else if(notification.length==3){ 
+                        for(var i=0; i< notification.length; i++){%>
+                          <a href="/notification/more-detail"> <li id="newsid" class="titlenews"><%= notification[i].title %></li></a>
+                          <% } %>
+                          
+                        
+<%}else if(notification.length > 3){ %>
+                    </ul>
+                    </ul>
+                    <ul id="newsfeed" class="scrolll" style="position: absolute;">
+                      <% 
+                        for(var i=0; i< notification.length; i++){%>
+                     <a href="/notification/more-detail" > <li id="newsid" class="titlenews"><%= notification[i].title %></li></a>
+                      <% }
+} else {%>
+                      <li id="textid" class="titlenews" >Coming Soon</li>
+                      <li class="titlenews">Comong Soon</li>
+                      <li class="titlenews">Comong Soon</li>
+
+                    
+                    <%}%>
+                  </ul>
+                  </div>
+                </div>
+                <div class="col-lg-12 mb-30">
+                  <div class="hero-content hero-content--modern">
+                    <div class="row welcomeclass" style="box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 40%);">
+                      <div class="col-12">
+                        <span  style="margin-right: 840px;font-size: 28px;" class="hero-content__title_small title text-white wow fadeInUp animated mobilefontspan"
+                          data-wow-delay="1s">
+                          Welcome To
+                        </span>
+                        <h1 style="font-size: 55px;"
+                          class="hero-content__title_big heading text-white wow fadeInUp animated mobilefonth1"
+                          data-wow-delay="1.2s">
+                          Multi  Professionals Co-operative Housing Society
+                        </h1>
+                      </div>
+                      <div class="col-lg-10">
+
+                        <span id="demo" class="hero-content__paragraph text wow fadeInUp animated"
+                          style="margin-right: 98px;font-size: 20px;text-transform: none;font-weight: normal;"></span>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+              </div>
+             
+            
+          </div>
+          </div>
+         
+        </section>
+         
+        <section class="about section-modern-bg pt-30 pb-100 ">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-lg-6 mb-30 reveal">
+                <div class="section-software p-0 mb-20">
+                  <span style="font-size: 25px;color: #FF0000;"
+                    class=" primary-text-color aos-item aos-init aos-animate"
+                    data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    mpchs
+                  </span>
+                  <h2 style="font-size: 60px;" class="section-software__title_big aos-item aos-init aos-animate"
+                    data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                    Vision & Mission
+                  </h2>
+                </div>
+                <div class="about-agency__right m-0">
+                  <div class="about-software__content about-agency__content">
+                    <span class="title title--small aos-item aos-init aos-animate fontvision" data-aos="fade-up"
+                      data-aos-duration="800" data-aos-delay="600">
+                      As a cooperative housing society established under the cooperative societies Act of 1925, MPCHS
+                      promotes real estate investment and the development of excellent housing projects, all while
+                      adhering to a "no profit-no-lose" philosophy.
+                      Members' rights and interests are our primary concern.
+                      It gives buyers and sellers a place to do business openly and gain a solid reputation.
+                      Building projects that are in keeping with the newest trends and highest standards of town
+                      planning, engineering, architecture and construction is our goal. Engineers, municipal planners,
+                      and other project experts with extensive training and expertise are brought in to help with this.
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-offset-1 col-lg-5 mb-30 reveal">
+                <div class="about-image about-image--modern position-relative">
+                 
+                  <div class="inner">
+                    <img class="roundd" src="assets/images/homepage/multi.jpg" alt="About" class="rounded-circle" />
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section style="background-color: white;" class="services services-modern services-modern--bg pb-70 reveal">
+    <div class="section-software section-title--modern text-center mb-50">
+      <h2 class="section-software__title_big heading--big ourprojects">
+        Our Projects
+      </h2>
+    </div>
+  <div class="container galerycar">
+    <div class="mySlides">
+      <div class="row">
+        <div class="col-md-7"><img class="galeery" src="/assets/images/homepage/123.jpg" style="width:100%"></div>
+     <div class="col-md-5 descriptionn">
+      <h4 class="heading heady">
+        <a >Islamabad Gardens</a>
+        <p class="fontvision" >Sector E-11/1 / E-11/3</p>
+      </h4>
+      <p class="fontvision"> Panoramic view coupled with aesthetically designed land scape is a breath taking moment while visiting the sector. 
+        The foot of Margala Hills reflecting the beauty of nature on an elevated view of Islamabad is another edge. MPCHS has
+         redefined this beauty of nature with professional expertise, visionary layout planning compatible to international standards.
+          The inhabitants are enjoying most modern amenities with comfortable lifestyle.  
+     </div>
+      </div>
+  
+    </div>
+  
+    <div class="mySlides">
+      <div class="row">
+        <div class="col-md-7"><img class="galeery" src="/assets/images/homepage/B-17 Gate.jpg" style="width:100%"></div>
+     <div class="col-md-5 descriptionn">
+      <h4 class="heading heady">
+        <a >Multi Gardens</a>
+        <p class="fontvision">Sector B-17</p>
+      </h4>
+      <p class="fontvision">The progressive growth of membership motivated MMPCS to lunch the project of Multi Gardens Sector B-17.
+        It is area wise the largest scheme of the Society with master piece layout planning. This sector is a gateway to
+         Islamabad from up country including Afghanistan, Central Asia, and China through Margella Avenue. The sector has
+          in built modern amenities of a comfortable lifestyle.</p>
+      
+     </div>
+      </div>
+    </div>
+  
+    <div class="mySlides">
+      <div class="row">
+        <div class="col-md-7"><img class="galeery" src="/assets/images/homepage/F-17.jpg" style="width:100%"></div>
+     <div class="col-md-5 descriptionn ">
+      <h4 class="heading heady">
+        <a >Tele Gardens</a>
+        <p class="fontvision">Sector F-17</p>
+      </h4>
+      <p class="fontvision">Ideally located scheme surrounded by institutions of value addition and is accessible through all main arteries
+         of communication is a significant factor of Tele Gardens scheme sector F-17 of MPCHS. Located exactly in the middle of 
+         Tarnol Interchange of Motorway (M-1) and Tarnol Railway crossing on G.T Road towards Taxila Peshawar on main Fateh Jhang
+         Road has attracted the members to occupy the land on top priority. The scheme is beautifully designed with all modern amenities
+          compatible to international standards with professionally excellent layout planning. This is a unique scheme in Zone-ii where 100%
+         land stands acquired and developed termed again as a living legend of MPCHS.</p>
+      
+     </div>
+      </div>
+    </div>
+      
+    <div class="mySlides">
+      
+      <div class="row">
+        <div class="col-md-7"><img class="galeery" src="/assets/images/homepage/Residencia & Orchards.jpg" style="width:100%"></div>
+     <div class="col-md-5 descriptionn">
+      <h4 class="heading heady">
+        <a >Multi Residentia & Orchards</a>
+        <p class="fontvision">Farm Housing Project</p>
+      </h4>
+      <p class="fontvision"> The scheme of ROS was designed to translate
+         this human desire in its true letter and spirit. 5-10 kanal plots were planned duly equipped with all
+          amenities available in residential colonies. Wide roads, parks, hospitals, universities, playground,
+           hug commercial area, underground electricity, Sui gas and similar other provisions were made to make 
+           it a scheme unique from rest of the farm house schemes country wide. On persistent pressure from the
+           members, few blocks were introduced purely for residential purposes. Hassel-free drive from surrounding 
+           cities is yet another beauty of location that too being adjacent to Motorway (M-1) and on the future China
+            Gawadar Trade corridor.</p>
+     </div>
+      </div>
+    </div>
+  
+  <div class="container-fluid mrg">
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/homepage/123.jpg" style="width:100%; height: 200px;" onmouseover="currentSlide(1)" alt="Islamabad Gardens">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/homepage/B-17 Gate.jpg" style="width:100%; height: 200px;" onmouseover="currentSlide(2)" alt="Multi Gardens">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/homepage/F-17.jpg" style="width:100%; height: 200px;" onmouseover="currentSlide(3)" alt="Tele Gardens">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/images/homepage/Residencia & Orchards.jpg" style="width:100%; height: 200px;" onmouseover="currentSlide(4)" alt="Multi Residentia & Orchards">
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="services services--details pt-130 pb-50 reveal">
+            <div class="container-fluid">
+              <div class="row services__details align-items-center">
+                <div class="col-lg-6 mb-80">
+                  <div class="content content--right">
+                    <h2 class="heading heading--big">Objectives</h2>
+                    <h4>The principal objective of the society is to promote and safe guard the socio-economic interests of its members with special emphasis on:-</h4>
+                   <ol style="list-style-type:disc" >
+                       <li class="fontvision">
+                        To acquire land, houses, buildings or other property of for the purpose carrying out objectives of the Society.
+                        </li><br>
+                       <li class="fontvision">
+                        To prepare plans, establish and maintain residential colonies for its members.
+                        </li><br>
+                       <li class="fontvision">
+                        To construct, manage and maintain works, services and other institutions of various kinds for the benefit
+                         and convenience of members residing in the colonies.
+                            </li><br>
+                       <li class="fontvision">
+                        To work as an agent of members for the purpose of preparing plans, designing houses, buildings and parks.
+                        </li><br>
+                       <li class="fontvision">
+                        To construct buildings for commercial use and for public welfare.
+                        </li><br>
+                       <li class="fontvision">
+                        To lay down rules and regulations for proper use and maintenance of all buildings, roads and other facilities 
+                        within the limits of the colony.
+                        </li><br>
+                       <li class="fontvision">
+                        To do generally, all such things as may be useful or expedient to carry out one or all objectives of the Society.
+                        </li><br>
+                        <li class="fontvision">
+                            To adopt measures designed to encourage the spirit of cooperation and friendship among members.
+                            </li><br>
+                           
+                                
+                        
+                   </ol>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-80 picgradent">
+                  
+                    <img class="fadeleft" src="./assets/images/homepage/ob2.jpg" alt="">
+                 
+                    </div>
+              
+               
+              
+              </div>
+            </div>
+          </section>
+  <%- include('./about-us/partial/footer.ejs') %>
+  <div class="progress-wrap active-progress">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 227.034;"></path>
+    </svg>
+  </div>
+        </main>
+
+    
+        <script>
+          function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+
+   
+          
+          </script>
+
+        
+
+    
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assets/dependencies/slick/slick.min.js"></script>
+    <script src="/assets/dependencies/parallax/parallaxie.js"></script>
+    <script src="/assets/dependencies/greensock/TweenMax.min.js"></script>
+    <script src="/assets/dependencies/tilt/vanilla-tilt.min.js"></script>
+    <script src="/assets/dependencies/counter-up/jquery.counterup.min.js"></script>
+    <script src="/assets/dependencies/waypoints/jquery.waypoints.min.js"></script>
+    <script src="/assets/dependencies/animation/wow.min.js"></script>
+    <script src="/assets/dependencies/fancybox/jquery.fancybox.min.js"></script>
+    <script src="/assets/js/modernizr-3.5.0.min.js"></script>
+    <script src="/assets/dependencies/hoverdir/jquery.hoverdir.js"></script>
+    <script src="/assets/dependencies/niceselect/jquery.nice-select.min.js"></script>
+    <script src="/assets/dependencies/anime/anime.min.js"></script>
+    <script src="/assets/dependencies/niceselect/jquery.nice-select.min.js"></script>
+    <script src="/assets/dependencies/isotope/isotope.pkgd.min.js"></script>
+    <script src="/assets/dependencies/isotope/imagesloaded.pkgd.min.js"></script>
+
+    <!-- ======= Main JS ======= -->
+    <script src="assets/js/main.js"></script>
+
+ 
+  <script src="assets/js/custom.js"></script>
+ <script src="/assets/js/custom1.js"></script>
+ <script src="/assets/js/navbardropdown.js"></script>
+  </body>
+</html>
